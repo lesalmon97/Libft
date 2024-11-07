@@ -6,12 +6,12 @@
 /*   By: lesalmon <lesalmon@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:28:50 by lesalmon          #+#    #+#             */
-/*   Updated: 2024/11/04 13:28:52 by lesalmon         ###   ########.fr       */
+/*   Updated: 2024/11/05 12:51:14 by lesalmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
- 
+
 void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;

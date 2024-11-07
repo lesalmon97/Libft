@@ -1,31 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lesalmon <lesalmon@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/04 13:36:48 by lesalmon          #+#    #+#             */
-/*   Updated: 2024/11/05 12:51:05 by lesalmon         ###   ########.fr       */
+/*   Created: 2024/11/06 15:57:49 by lesalmon          #+#    #+#             */
+/*   Updated: 2024/11/07 16:40:03 by lesalmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	size_t				c;
-	const unsigned char	*str1;
-	const unsigned char	*str2;
+	t_list	*newlst;
 
-	str1 = (const unsigned char *)s1;
-	str2 = (const unsigned char *)s2;
-	c = 0;
-	while (c < n)
+	newlst = (t_list *)malloc(sizeof(t_list));
+	while (lst != NULL)
 	{
-		if (str1[c] != str2[c])
-			return (str1[c] - str2[c]);
-		c++;
+		newlst = f(lst->content);
+		free(lst->content);
+		lst = lst->next;
+		newlst = newlst->next;
 	}
-	return (0);
+	return (newlst);
 }
