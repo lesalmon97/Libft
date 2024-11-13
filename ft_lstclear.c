@@ -1,20 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lesalmon <lesalmon@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/05 13:42:42 by lesalmon          #+#    #+#             */
-/*   Updated: 2024/11/06 15:30:25 by lesalmon         ###   ########.fr       */
+/*   Created: 2024/11/06 14:20:58 by lesalmon          #+#    #+#             */
+/*   Updated: 2024/11/12 12:21:22 by lesalmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstlast(t_list *lst)
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	while (lst->next != NULL)
-		lst = lst->next;
-	return (lst);
+	while (*lst != NULL)
+	{
+		ft_lstdelone(*lst, del);
+		*lst = (*lst)->next;
+	}
 }
