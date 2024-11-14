@@ -6,7 +6,7 @@
 /*   By: lesalmon <lesalmon@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:46:17 by lesalmon          #+#    #+#             */
-/*   Updated: 2024/11/06 14:29:20 by lesalmon         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:30:15 by lesalmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(s2, (char *)s1 + start, s2_len + 1);
 	return (s2);
 }
+/*
+int main()
+{
+	char const *s1 = "xaxaxaxaokxaxaxaxokxaxaxaxaxa";
+	char const *s2 = "xa";
+	
+	printf("%s\n", ft_strtrim(s1, s2));
+	return (0);
+}
+*/

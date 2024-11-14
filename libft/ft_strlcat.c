@@ -6,7 +6,7 @@
 /*   By: lesalmon <lesalmon@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:30:30 by lesalmon          #+#    #+#             */
-/*   Updated: 2024/11/04 13:30:31 by lesalmon         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:05:07 by lesalmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,15 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dst_len + i] = '\0';
 	return (dst_len + src_len);
 }
+/*
+int main()
+{
+	char *dst = "hello";
+	char *src = "bonjour";
+	size_t size = 4;
+
+	printf("%zu\n", ft_strlcat(dst, src, size));
+	printf("%zu\n", strlcat(dst, src, size));
+	return (0);
+}
+*/

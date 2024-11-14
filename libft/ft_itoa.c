@@ -6,7 +6,7 @@
 /*   By: lesalmon <lesalmon@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:47:13 by lesalmon          #+#    #+#             */
-/*   Updated: 2024/11/04 13:47:14 by lesalmon         ###   ########.fr       */
+/*   Updated: 2024/11/14 16:24:58 by lesalmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,3 +65,12 @@ char	*ft_itoa(int n)
 	result[len] = '\0';
 	return (result);
 }
+/*
+int main ()
+{
+	int n = 1233445;
+
+	printf("%s\n", ft_itoa(n));
+	return (0);
+}
+*/

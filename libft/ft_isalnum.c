@@ -6,7 +6,7 @@
 /*   By: lesalmon <lesalmon@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:28:57 by lesalmon          #+#    #+#             */
-/*   Updated: 2024/11/04 13:28:59 by lesalmon         ###   ########.fr       */
+/*   Updated: 2024/11/14 16:21:20 by lesalmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,11 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
+/*
+int main ()
+{
+	int c = '?';
+
+	printf("%d\n", ft_isalnum(c));
+	return (0);
+}*/

@@ -6,7 +6,7 @@
 /*   By: lesalmon <lesalmon@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:30:41 by lesalmon          #+#    #+#             */
-/*   Updated: 2024/11/04 13:30:43 by lesalmon         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:24:13 by lesalmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,15 @@ char	*ft_strnstr(const char *txt, const char *str, size_t len)
 	}
 	return (NULL);
 }
+/*
+int main ()
+{
+	const char *txt = "hello world";
+	const char *str = "orl";
+	size_t len = 10;
+
+	printf("%s\n", ft_strnstr(txt, str, len));
+	printf("%s\n", strnstr(txt, str, len));	
+	return (0);
+}
+*/

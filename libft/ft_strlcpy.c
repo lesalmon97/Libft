@@ -6,7 +6,7 @@
 /*   By: lesalmon <lesalmon@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:30:34 by lesalmon          #+#    #+#             */
-/*   Updated: 2024/11/04 13:30:35 by lesalmon         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:19:00 by lesalmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,15 @@ size_t	ft_strlcpy(char *dest, char *src, size_t size)
 	}
 	return (result);
 }
+/*
+int	main(void)
+{
+	char	dest[10];
+	char	*src = "bonjour";
+	size_t	size = 10;
+
+	printf("%zu\n", ft_strlcpy(dest, src, size));
+	printf("%zu\n", strlcpy(dest, src, size));
+	return (0);
+}
+*/

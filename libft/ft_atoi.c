@@ -6,7 +6,7 @@
 /*   By: lesalmon <lesalmon@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:37:30 by lesalmon          #+#    #+#             */
-/*   Updated: 2024/11/04 13:37:35 by lesalmon         ###   ########.fr       */
+/*   Updated: 2024/11/13 15:29:39 by lesalmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,14 @@ int	ft_atoi(const char *str)
 	}
 	return (nbr * sign);
 }
+/*
+int main(int ac, char **av)
+{
+	if (ac == 2)
+	{
+		printf("%d\n", atoi(av[1]));
+		printf("%d\n", ft_atoi(av[1]));
+	}
+	return (0);
+}
+*/

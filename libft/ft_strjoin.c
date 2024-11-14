@@ -6,7 +6,7 @@
 /*   By: lesalmon <lesalmon@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:45:01 by lesalmon          #+#    #+#             */
-/*   Updated: 2024/11/04 13:45:02 by lesalmon         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:01:01 by lesalmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[c] = '\0';
 	return (str);
 }
+/*
+int main ()
+{
+	char *s1 = "cc";
+	char *s2 = "ok";
+
+	printf("%s\n", ft_strjoin(s1, s2));
+	return (0);
+}
+*/

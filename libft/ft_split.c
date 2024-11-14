@@ -6,7 +6,7 @@
 /*   By: lesalmon <lesalmon@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:46:33 by lesalmon          #+#    #+#             */
-/*   Updated: 2024/11/04 13:46:47 by lesalmon         ###   ########.fr       */
+/*   Updated: 2024/11/14 16:51:10 by lesalmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,3 +74,32 @@ char	**ft_split(char const *s, char c)
 	result[i] = NULL;
 	return (result);
 }
+/*
+void free_split(char **split) {
+    size_t i = 0;
+    while (split[i]) {
+        free(split[i]);
+        i++;
+    }
+    free(split);
+}
+
+int main() {
+    char *str = "Hello World! Welcome to C programming.";
+    char delimiter = ' ';
+    char **split = ft_split(str, delimiter);
+
+    if (split == NULL) {
+        printf("Error: Memory allocation failed.\n");
+        return 1;
+    }
+
+    for (size_t i = 0; split[i] != NULL; i++) {
+        printf("Word %zu: %s\n", i + 1, split[i]);
+        free(split[i]);
+    }
+
+    free(split);
+    return 0;
+}
+*/

@@ -6,7 +6,7 @@
 /*   By: lesalmon <lesalmon@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:35:25 by lesalmon          #+#    #+#             */
-/*   Updated: 2024/11/05 12:55:24 by lesalmon         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:21:15 by lesalmon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,15 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return ((s1[c] - s2[c]) * sign);
 }
+/*
+int main ()
+{
+	const char *s1 = "Hell0";
+	const char *s2 = "Hello";
+	size_t		size = 5;
+
+	printf ("%d\n", ft_strncmp(s1, s2, size));
+	printf ("%d\n", strncmp(s1, s2, size));
+	return (0);
+}
+*/
